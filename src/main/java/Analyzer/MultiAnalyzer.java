@@ -27,11 +27,11 @@ public class MultiAnalyzer {
 
     public void perform(){
 //        DetectLanguage.apiKey = "aa87b41910ef4f3bb955c4a5ade38d03";
-        String text = InputFromFile.readTextFromFile();
+        String text = InputFromFile.readTextFromFile("C:\\Users\\Igor\\Desktop\\TextStatistic.txt");
 //        String language = DetectLanguage.simpleDetect(text);
 //        System.out.println("Frequency of each letter " + letterFrequencyCounter.analyzer(text));
-        System.out.println("The longest words are " + tenLongestWords.analyzer(text));
-//        System.out.println("The most popular words are " + tenMostPopularWords.analyzer(text));
+//        System.out.println("The longest words are " + tenLongestWords.analyzer(text));
+        System.out.println("The most popular words are " + tenMostPopularWords.analyzer(text));
 //        System.out.println("Number of words in the text " + wordCounter.analyzer(text));
 //        System.out.println("Language used in the text: " + language);
 

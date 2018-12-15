@@ -1,29 +1,27 @@
 package InputOutput;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class InputFromFile {
 
-        public static String readTextFromFile(){
+    public static String readTextFromFile(String path) {
 
-            StringBuilder sb = new StringBuilder();
-            String line;
-            try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Igor\\Desktop\\TextStatistic.txt"))) {
-                while ((line = br.readLine()) != null) {
-                    sb.append(line);
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            return sb.toString();
+        List<String> list = new ArrayList<>();
+        try (Stream<String> stream = Files.lines(Paths.get(path))) {
+            list = stream.filter(line -> !line.startsWith(" "))
+                    .map(String::toLowerCase)
+                    .collect(Collectors.toList());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-        public static void main(String[] args) {
-            System.out.println(InputFromFile.readTextFromFile());
-        }
 
+        return list.toString();
     }
-
+}
