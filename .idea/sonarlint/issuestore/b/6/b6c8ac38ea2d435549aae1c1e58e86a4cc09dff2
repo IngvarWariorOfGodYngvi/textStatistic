@@ -1,0 +1,15 @@
+
+V
+squid:S106!"9Replace this use of System.out or System.err by a logger.(¢¹å÷8Ü›…’û,
+Usquid:UselessImportCheck"*Remove this unused import 'InputFormFile'.(Ö´Åð8¦ºÓ’û,
+[
+squid:S106$"9Replace this use of System.out or System.err by a logger.(ûý·Ëøÿÿÿÿ8Ü›…’û,
+V
+squid:S106#"9Replace this use of System.out or System.err by a logger.(êÐû¶8Ü›…’û,
+[
+squid:S106""9Replace this use of System.out or System.err by a logger.( ‚ž³ÿÿÿÿÿ8Ü›…’û,
+[
+squid:S106%"9Replace this use of System.out or System.err by a logger.(ñóÞÖüÿÿÿÿ8Ü›…’û,
+’squid:S1319"tThe type of the "analyzers" object should be an interface such as "List" rather than the implementation "ArrayList".(£ÙÙæ8ü¨é‘û,
+Tsquid:S2696"6Make the enclosing method "static" or remove this set.(‹÷ÝØ8­îÌ’û,
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‘ŒšÒýÿÿÿÿ

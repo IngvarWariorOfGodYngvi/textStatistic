@@ -1,10 +1,6 @@
 import Analyzer.LetterFrequencyCounter;
-import com.sun.org.apache.xpath.internal.operations.String;
-import junitparams.JUnitParamsRunner;
-import junitparams.Parameters;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
 import java.util.HashMap;
 import java.util.Map;

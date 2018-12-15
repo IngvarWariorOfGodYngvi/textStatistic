@@ -10,7 +10,7 @@ public class LetterFrequencyCounter implements Analyzer {
     public Map<Character, Double> analyzer(String text) {
 
         Map<Character, Double> letterFrequency = new HashMap<>();
-        String textToLowerCase = text.toLowerCase().replaceAll("[^a-z]+", "");
+        String textToLowerCase = text.toLowerCase().replaceAll("[^a-zA-Z]+", "");
         for (char c : textToLowerCase.toCharArray()) {
             letterFrequency.merge(c,1.0/text.length(),Double::sum);
         }
